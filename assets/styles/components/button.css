@@ -1,0 +1,13 @@
+.button {
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  padding: 0.3rem 3rem;
+  background-color: var(--cor-azul-opaco);
+  color: white;
+}
+
+.button-azul {
+  background-color: var(--cor-azul);
+  color: white;
+}
