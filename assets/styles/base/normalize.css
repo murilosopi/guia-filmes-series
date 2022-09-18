@@ -1,3 +1,7 @@
+body,html {
+  min-height: 70vh;
+}
+
 body {
   background-color: var(--cor-dark);
   color: white;
