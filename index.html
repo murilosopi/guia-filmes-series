@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="h-100">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,17 +18,27 @@
     <link rel="stylesheet" href="assets/styles/components/title.css">
     <link rel="stylesheet" href="assets/styles/components/button-custom.css">
     <link rel="stylesheet" href="assets/styles/components/input-custom.css">
+    <link rel="stylesheet" href="assets/styles/components/line-box.css">
+    
+    
+    <link rel="stylesheet" href="assets/styles/layout/vertical-center.css">
   </head>
-  <body class="h-100">
-    <main class="container d-flex justify-content-center align-items-center h-75">
+  <body class="d-flex flex-column">
+    <div class="line-box mt-5">
+      <div class="line w-50"></div>
+      <div class="line w-100"></div>
+      <div class="line w-75"></div>
+    </div>
+
+    <main class="container d-flex justify-content-center my-auto">
       <div>
         <div class="text-center">
           <h1 class="title">Entre na sua conta</h1>
           <p>Se você ainda não tiver uma conta, <a href="#">cadastre-se aqui.</a></p>
         </div>
   
-        <form action="#" class="l-form">
-          <div class="d-flex flex-column align-items-center justify-content-center">
+        <form action="#">
+          <div class="mb-3">
             <div class="input-group input-custom mb-3">
               <div class="input-group-text">
                 <i class="bi bi-person-circle"></i>
@@ -44,12 +54,11 @@
             </div>
           </div>
   
-          <div class="d-flex justify-content-between mt-3 gap-4">
+          <div class="d-flex justify-content-between">
             <button type="reset" class="button-custom">Limpar</button>
             <button type="submit" class="button-custom button-custom-azul">Entrar</button>
           </div>
         </form>
-      </div>
     </main> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
