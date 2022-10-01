@@ -1,11 +1,12 @@
 .l-poster {
   display: flex;
-  gap: 6rem;
+  justify-content: center;
+  gap: 5vw;
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
 .l-poster .poster-card {
-  width: 212px;
-  height: 312px;
+  width: 14vw; 
+  height: 22vw;
 }
