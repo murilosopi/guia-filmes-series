@@ -2,11 +2,24 @@
   display: flex;
   justify-content: center;
   gap: 5vw;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .l-poster .poster-card {
+  display: flex;
+  justify-content: center;
   width: 14vw; 
   height: 22vw;
+  max-width: 215px;
+  max-height: 320px;
+  position: relative;
+}
+
+.l-poster .poster-card .poster-inner {
+  display: flex;  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }

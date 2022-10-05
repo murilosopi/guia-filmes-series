@@ -1,4 +1,47 @@
 .poster-card {
   background-color: #4C4C4C;
   border-bottom: 2px solid white;
+  overflow: hidden;
+  transition: 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.poster-card .poster-img {
+  cursor: pointer;
+}
+
+.poster-card:hover {
+  transform: scale(1.08);
+}
+
+.poster-card .poster-inner {
+  visibility: hidden;
+  opacity: 0;
+  transition: 250ms;
+  padding: 0.8rem;
+}
+
+.poster-card:hover .poster-inner {
+  visibility: visible;
+  opacity: 1;
+}
+
+.poster-card .poster-control {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  color: white;
+  transition: 100ms ease-in-out;
+}
+
+.poster-card .poster-control:hover {
+  transform: scale(1.05);
+}
+
+.poster-card .poster-title {
+  font-size: 1.1rem;
+}
+
+.poster-card .poster-rating {
+  font-size: 1rem;
 }
