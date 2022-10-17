@@ -2,7 +2,9 @@
   border: 0;
   outline: 0;
   border-radius: 0;
-  padding: 0.3rem 5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
   background-color: var(--cor-azul-opaco);
   color: white;
 }
