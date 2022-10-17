@@ -27,27 +27,33 @@
     <link rel="stylesheet" href="assets/styles/layout/l-poster.css">
   </head>
   <body>
-    <header class="px-5 py-4 d-flex align-items-center justify-content-between">
-      <div class="col-2 d-flex">
-        <h1 class="title h2 m-auto">Watched!</h1>
-      </div>
-      <div class="col-4 position-absolute start-50 translate-middle-x">
-        <form action="#" class="d-flex">
-          <div class="input-group search-box w-100">
-            <input type="search" name="pesquisa" id="pesquisa" class="w-75" placeholder="Procure por filmes e séries">
-            <button type="submit" class="25">
-              <i class="bi bi-search"></i>
-            </button>
+    <header class="py-4 px-3">
+      <div class="navbar navbar-expand-md navbar-dark">
+        <div class="container justify-content-between">
+          <h1 class="title h2 mb-0 d-none d-md-block">Watched!</h1>
+          <form action="#" class="d-flex flex-grow-1 mx-3 mx-md-5">
+            <div class="input-group search-box w-100">
+              <input type="search" name="pesquisa" id="pesquisa" class="w-75" placeholder="Procure por filmes e séries">
+              <button type="submit" class="w-25">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbar">      
+            <nav class="text-end">
+              <div class="pt-3 pt-md-0">
+                <a href="sign-up.html">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                  Crie sua conta!
+                </a>
+              </div>
+            </nav>
           </div>
-        </form>
+        </div>
       </div>
-
-      <nav class="col-2 text-center ">
-        <a href="sign-up.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          Crie sua conta!
-        </a>
-      </nav>
     </header>
 
     <div class="line-box">
@@ -56,380 +62,374 @@
       <div class="line w-75"></div>
     </div>
 
-    <main class="container">
-
-
-      <div id="poster-box" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="l-poster">
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="placeholder poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">Carregando...</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      Carregando...
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
+    <main class="container-fluid">
+      <div class="l-poster">
+        <article class="poster-card">
+          <img class="poster-img" src="#" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
             </div>
           </div>
+        </article>
 
-          <div class="carousel-item">
-            <div class="l-poster">
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="placeholder poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">Carregando...</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      Carregando...
-                    </span>
-                  </div>
-                </div>
-              </article>
-              
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
             </div>
           </div>
+        </article>
 
-          <div class="carousel-item">
-            <div class="l-poster">
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="placeholder poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">Carregando...</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      Carregando...
-                    </span>
-                  </div>
-                </div>
-              </article>
-              
-              <article class="poster-card">
-                <div class="poster-inner">
-                  <div class="poster-top d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                      <button class="poster-control">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <button class="poster-control">
-                        <i class="bi bi-camera-reels"></i>
-                      </button>
-                    </div>
-
-                    <div>
-                      <button class="poster-control">
-                        <i class="bi bi-bookmark-star"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="poster-bottom">
-                    <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
-                    <span class="poster-rating">
-                      <i class="bi bi-star-half"></i>
-                      3.3
-                    </span>
-                  </div>
-                </div>
-              </article>
+        <article class="poster-card">
+          <img class="poster-img" src="#" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <button class="carousel-control-prev l-fit px-3" type="button" data-bs-target="#poster-box" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next l-fit px-3" type="button" data-bs-target="#poster-box" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="poster-card">
+          <img class="poster-img" src="#" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="poster-card">
+          <img class="poster-img" src="#" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="poster-card">
+          <img class="poster-img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE2t138I37V7uTrgAGDW56gedLIbSEfTqfUpBpQq4un87mB1ph" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="poster-card">
+          <img class="poster-img" src="#" alt="">
+          
+          <div class="poster-inner">
+            
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">[ Nome do filme ]</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                3.3
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="placeholder poster-card">
+          <div class="poster-inner">
+            <div class="poster-top d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <button class="poster-control">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <button class="poster-control">
+                  <i class="bi bi-camera-reels"></i>
+                </button>
+              </div>
+  
+              <div>
+                <button class="poster-control">
+                  <i class="bi bi-bookmark-star"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="poster-bottom">
+              <h3 class="poster-title text-truncate">Carregando...</h3>
+              <span class="poster-rating">
+                <i class="bi bi-star-half"></i>
+                Carregando...
+              </span>
+            </div>
+          </div>
+        </article>
       </div>
-
     </main> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
