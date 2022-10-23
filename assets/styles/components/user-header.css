@@ -1,0 +1,24 @@
+.user-header {
+  background-color: rgb(23, 23, 23);
+  padding: 3rem 2rem;
+}
+
+.user-header .user-photo {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  max-width: 250px;
+  border-radius: 50%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.user-header .user-stats {
+  list-style-type: none;
+  column-count: 2;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.user-header .user-stats i {
+  font-size: 1.4rem;
+}
