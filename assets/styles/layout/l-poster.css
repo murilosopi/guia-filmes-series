@@ -2,15 +2,24 @@
   display: flex;
   width: 75%;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 3rem 2rem;
+
+  overflow-x: scroll;
+  scrollbar-color: red;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.l-poster::-webkit-scrollbar{
+  height: 0;
 }
 
 .l-poster .poster-card {
   display: flex;
   width: 250px;
+  min-width: 250px;
   justify-content: center;
   position: relative;
 }
@@ -26,4 +35,9 @@
 
 .l-poster .poster-card .poster-img {
   width: 100%;
+}
+
+.l-poster + .scroller {
+  position: relative;
+  bottom: 1rem;
 }
