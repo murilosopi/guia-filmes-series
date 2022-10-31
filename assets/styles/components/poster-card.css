@@ -23,19 +23,6 @@
   opacity: 1;
 }
 
-.poster-card .poster-control {
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 1.4rem;
-  color: white;
-  transition: 100ms ease-in-out;
-}
-
-.poster-card .poster-control:hover {
-  transform: scale(1.05);
-}
-
 .poster-card .poster-title {
   font-size: 1.1rem;
 }
