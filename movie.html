@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="assets/styles/components/icon-button.css">
     <link rel="stylesheet" href="assets/styles/components/dark-box.css">
     <link rel="stylesheet" href="assets/styles/components/divider.css">
+    <link rel="stylesheet" href="assets/styles/components/input-custom.css">
+    <link rel="stylesheet" href="assets/styles/components/button-custom.css">
     
     <!-- Estilos de layouts -->
     <link rel="stylesheet" href="assets/styles/layout/l-movie.css">
+    <link rel="stylesheet" href="assets/styles/layout/l-fit.css">
 
   </head>
   <body class="pb-5">
@@ -245,24 +248,53 @@
       <hr class="divider p-0">
       <section>
         <h3>Já assistiu?</h3>
-        <h4 class="small">Costre para todos o que você achou...</h4>
+        <h4 class="small">Mostre para todos o que você achou...</h4>
 
-        <form action="" method="post">
-          <ul class="list-unstyled fs-4 d-flex gap-3" id="rating-list">
-            <li data-rate="1"><i class="bi bi-star"></i></li>
-            <li data-rate="2"><i class="bi bi-star"></i></li>
-            <li data-rate="3"><i class="bi bi-star"></i></li>
-            <li data-rate="4"><i class="bi bi-star"></i></li>
-            <li data-rate="5"><i class="bi bi-star"></i></li>
-          </ul>
+        <form action="" method="post" class="row py-3">
+          <div class="col-lg-9">
+            <label for="review-title" class="input-custom d-block mb-3">
+              Título <small>(opcional)</small>
+              <input class="form-control" type="text" name="review-title" id="review-title" placeholder="">
+            </label>
+    
+            <label for="review-description" class="input-custom d-block mb-3">
+              Descreve sua experiência
+              <textarea name="review-description" id="review-description" class="form-control" rows="8">
+              </textarea>
+            </label>
+          </div>
 
-          <input type="hidden" name="rate" id="rate">
-          
+          <div class="col-lg-3 d-flex flex-lg-column gap-lg-3 gap-5 mb-3">
+            <div>
+              <label for="rating">Avaliação</label>
+              <ul class="list-unstyled fs-4 d-flex gap-2 mb-0" id="rating-list">
+                <li data-rating="1" class="icon-button"><i class="bi bi-star"></i></li>
+                <li data-rating="2" class="icon-button"><i class="bi bi-star"></i></li>
+                <li data-rating="3" class="icon-button"><i class="bi bi-star"></i></li>
+                <li data-rating="4" class="icon-button"><i class="bi bi-star"></i></li>
+                <li data-rating="5" class="icon-button"><i class="bi bi-star"></i></li>
+              </ul>
+              <input type="hidden" name="rating" id="rating">
+            </div>
+            
+            <div>
+              <label for="like">Curtir</label>
+              <button class="icon-button d-block m-lg-0 m-auto" type="button" id="like-toggler">
+                <i class="bi bi-heart"></i>
+              </button>
+              <input type="hidden" name="like" id="like">
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <button type="submit" class="button-custom w-100 py-2">Salvar</button>
+          </div>
         </form>
       </section>
     </main> 
 
     <script src="assets/js/rating.js"></script>
+    <script src="assets/js/like.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
