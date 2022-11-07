@@ -2,12 +2,12 @@
   const ratingList = document.querySelectorAll('#rating-list > *');
   ratingList.forEach(star => {
     star.addEventListener('click', () => {
-      const rateValue = star.getAttribute('data-rate');
-      const inputRate = document.getElementById('rate');
-      inputRate.value = rateValue;
+      const ratingValue = star.getAttribute('data-rating');
+      const inputrating = document.getElementById('rating');
+      inputrating.value = ratingValue;
 
       unfillAllStars();
-      fillStarsUntil(rateValue);
+      fillStarsUntil(ratingValue);
     });
   });
 
@@ -19,7 +19,7 @@
 
   function fillStarsUntil(max) {
     ratingList.forEach(star => {
-      if(star.getAttribute('data-rate') <= max) {
+      if(star.getAttribute('data-rating') <= max) {
         star.firstChild.className = "bi bi-star-fill";
       }
     })
